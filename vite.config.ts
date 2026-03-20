@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: 'https://trappymadz.github.io/My-Portfolio/',
+  base: '/My-Portfolio/',
   plugins: [vue(), vueDevTools()],
   resolve: {
     alias: {
