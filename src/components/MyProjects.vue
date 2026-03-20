@@ -2,6 +2,8 @@
 import MyButton from './MyButton.vue'
 import ProjectCard from './ProjectCard.vue'
 import { ref } from 'vue'
+
+const isExpanded = ref(false)
 </script>
 
 <template>
