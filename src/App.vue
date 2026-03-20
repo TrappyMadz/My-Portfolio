@@ -1,11 +1,35 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Header from './components/Header.vue'
+import MyButton from './components/MyButton.vue'
+</script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <Header id="header"></Header>
+  <RouterView></RouterView>
 </template>
 
-<style scoped></style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+#app {
+  min-height: 100dvh;
+  min-width: 100dvw;
+  background-color: #4b2861;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin: 0;
+}
+
+#header {
+  position: fixed;
+}
+</style>
