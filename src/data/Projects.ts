@@ -11,7 +11,7 @@ interface Project {
   type: String[]
 }
 
-const path = '@/assets/projectsPreviews/'
+const path = 'projectsPreviews/'
 
 export const Projects: Project[] = [
   {
