@@ -5,7 +5,7 @@ interface Project {
   imgPath: String
   summary: String
   skills: Skill[]
-  gitLink: String
+  gitLink: string
 }
 
 const path = 'projectsPreviews/'

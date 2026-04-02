@@ -7,10 +7,18 @@ import Chip from './Chip.vue'
 const props = defineProps<{
   projectId: number
 }>()
+
+// Fonction pour rediriger l'utilisateur vers le lien GitHub
+const openProjectLink = () => {
+  const url = Projects[props.projectId]?.gitLink 
+  if (url) {
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }
+}
 </script>
 
 <template>
-  <div id="card">
+  <div id="card" @click="openProjectLink">
     <h2
       id="title"
       class="text"
