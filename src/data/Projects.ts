@@ -57,6 +57,6 @@ export const Projects: Project[] = [
     summary:
       "Prototype nerveux conçu lors d'une Game Jam : un défi de réflexes exigeant d'enchaîner 5 mini-jeux aléatoires à la souris en moins de 30 secondes.",
     skills: [Skills.unity as Skill, Skills.csharp as Skill],
-    gitLink: 'https://github.com/example/Be-careful-man-',
+    gitLink: 'https://trappymadz.itch.io/be-careful',
   },
 ]
