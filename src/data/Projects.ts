@@ -25,7 +25,7 @@ export const Projects: Project[] = [
     summary:
       'Participation à IA4Industries 2026. Assistant IA industriel. Combine VLM et RAG pour automatiser le diagnostic de pannes depuis des schémas techniques.',
     skills: [Skills.langchain as Skill, Skills.python as Skill],
-    gitLink: 'https://github.com/Groupe-2-LLM/rag_question_llm?tab=readme-ov-file',
+    gitLink: '#',
   },
   {
     name: "Freddy's Organizer",
