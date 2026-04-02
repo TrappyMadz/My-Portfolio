@@ -99,7 +99,6 @@ onUnmounted(() => {
 
 <template>
   <section class="hobbies-section">
-    <h2>Mes Loisirs</h2>
     
     <div class="playmat" ref="playmatRef">
       
