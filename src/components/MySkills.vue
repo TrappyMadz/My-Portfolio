@@ -63,6 +63,13 @@ button {
   flex-grow: 1;
 }
 
+button.active {
+  background-color: #795f8a;
+  color: #fff;
+  border-color: #5c4769;
+  font-weight: 500;
+}
+
 #content {
   border: 1px #e0afff solid;
   width: 100%;
