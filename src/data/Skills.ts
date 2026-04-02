@@ -75,4 +75,24 @@ export const Skills: Record<string, Skill> = {
     name: 'Modélisation 3D (Blender)',
     type: Type.ART,
   },
+  angular: {
+    name: 'Angular',
+    type: Type.FRONTEND,
+  },
+  ansible: {
+    name: 'Ansible',
+    type: Type.INFRA,
+  },
+  terraform: {
+    name: 'Terraform',
+    type: Type.INFRA,
+  },
+  unity: {
+    name: 'Unity',
+    type: Type.ART,
+  },
+  csharp: {
+    name: 'C#',
+    type: Type.BACKEND,
+  },
 }

@@ -20,7 +20,7 @@ const props = defineProps<{
     </h2>
     <img
       class="text"
-      :src="Projects[projectId]?.imgPaths[0]?.toString()"
+      :src="Projects[projectId]?.imgPath?.toString()"
       :alt="Projects[projectId]?.name + ' hero image'"
     />
     <div class="text" id="desc">
