@@ -16,7 +16,7 @@ const submitForm = async () => {
   statusMessage.value = { text: '', type: '' }
 
   try {
-    const response = await fetch('https://formspree.io/f/TON_ID_FORMSPREE', {
+    const response = await fetch('https://formspree.io/f/xkopvqlq', {
       method: 'POST',
       headers: {
         'Accept': 'application/json',
