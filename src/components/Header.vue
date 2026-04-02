@@ -1,19 +1,30 @@
 <script setup lang="ts">
-import { RouterLink } from 'vue-router'
+// Plus besoin d'importer RouterLink
+
+// Fonction pour faire défiler la page de manière fluide vers l'ID cible
+const scrollTo = (id: string) => {
+  const element = document.getElementById(id)
+  if (element) {
+    element.scrollIntoView({ 
+      behavior: 'smooth', 
+      block: 'start' 
+    })
+  }
+}
 </script>
 
 <template>
   <header class="main-header">
     <nav class="nav-container">
       <ul class="nav-links">
-        <li><RouterLink to="/projects" class="link">Projets</RouterLink></li>
-        <li><RouterLink to="/experiences" class="link">Expériences</RouterLink></li>
-        <li><RouterLink to="/formations" class="link">Formations</RouterLink></li>
-        <li><RouterLink to="/hobbies" class="link">Loisirs</RouterLink></li>
+        <li><a href="#projects" @click.prevent="scrollTo('projects')" class="link">Projets</a></li>
+        <li><a href="#xp" @click.prevent="scrollTo('xp')" class="link">Expériences</a></li>
+        <li><a href="#classes" @click.prevent="scrollTo('classes')" class="link">Formations</a></li>
+        <li><a href="#hobbies" @click.prevent="scrollTo('hobbies')" class="link">Loisirs</a></li>
       </ul>
 
       <div class="nav-action">
-        <RouterLink to="/contact" class="btn-contact"> Contact </RouterLink>
+        <a href="#contact" @click.prevent="scrollTo('contact')" class="btn-contact"> Contact </a>
       </div>
     </nav>
   </header>
@@ -55,6 +66,7 @@ import { RouterLink } from 'vue-router'
   font-size: 1rem;
   transition: color 0.3s ease;
   position: relative;
+  cursor: pointer;
 }
 
 /* Petit effet de soulignement moderne au survol */
@@ -65,7 +77,7 @@ import { RouterLink } from 'vue-router'
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: #a855f7; /* Une couleur violette électrique */
+  background-color: #a855f7;
   transition: width 0.3s ease;
 }
 
@@ -88,12 +100,12 @@ import { RouterLink } from 'vue-router'
   font-weight: 600;
   transition: all 0.3s ease;
   border: 2px solid white;
+  cursor: pointer;
 }
 
 .btn-contact:hover {
   background-color: transparent;
   color: white;
-  /* On réutilise l'esprit de tes animations */
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(168, 85, 247, 0.4);
 }
