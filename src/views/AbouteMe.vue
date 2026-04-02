@@ -164,7 +164,7 @@ const drawerHeight = ref(0)
       </section>
       <section id="hobbies">
         <h2>Mes loisirs</h2>
-        <MyHobbies id="hobbies"></MyHobbies>
+        <MyHobbies id="myhobbies"></MyHobbies>
         <MyButton
           id="router"
           where-to-go="contact"
@@ -369,7 +369,5 @@ table.xpTable tfoot td {
 
 #hobbies {
   max-width: 80dvw;
-  margin: auto;
-  min-height: 100dvh;
 }
 </style>
