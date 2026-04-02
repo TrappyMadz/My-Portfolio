@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import MyButton from '@/components/MyButton.vue'
+import MyContact from '@/components/MyContact.vue'
+import MyHobbies from '@/components/MyHobbies.vue'
 import MyProjects from '@/components/MyProjects.vue'
 import MySkills from '@/components/MySkills.vue'
 import ProjectCard from '@/components/ProjectCard.vue'
@@ -162,6 +164,7 @@ const drawerHeight = ref(0)
       </section>
       <section id="hobbies">
         <h2>Mes loisirs</h2>
+        <MyHobbies id="hobbies"></MyHobbies>
         <MyButton
           id="router"
           where-to-go="contact"
@@ -171,6 +174,7 @@ const drawerHeight = ref(0)
       </section>
       <section id="contact">
         <h2>Me contacter</h2>
+        <MyContact></MyContact>>
       </section>
     </div>
   </main>
@@ -361,5 +365,11 @@ table.xpTable tfoot td {
 #contact h2 {
   margin-top: 0;
   padding-bottom: 30px;
+}
+
+#hobbies {
+  max-width: 80dvw;
+  margin: auto;
+  min-height: 100dvh;
 }
 </style>
